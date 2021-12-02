@@ -1,38 +1,37 @@
 <template>
-  <div class="container">
-    <h2>Login</h2>
-    <form>
-      <div class="input-field">
-        <input
-          type="text"
-          id="nome"
-          placeholder="Escreva o seu nome"
-          name=""
-          value=""
-        />
-        <label for="nome">Nome:</label>
-      </div>
-      <div class="input-field">
-        <input
-          type="password"
-          id="senha"
-          placeholder="Digite sua senha"
-          name=""
-          value=""
-        />
-        <label for="senha">Senha:</label>
-      </div>
-      <div class="center">
-        <button>Entrar</button>
-      </div>
-    </form>
-
-    <div class="Links">
-      <router-link to="/senha"><p>Esqueceu a sua senha?</p></router-link> |
-      <router-link to="/cadastro"><p>Ainda não é cadastrado?</p></router-link> |
+    <div class="container">
+        <h2>Cadastro</h2>
+        <form action="index.html" method="post">
+            <div class="input-field">
+                <input type="text" id="nome" placeholder="Escreva o seu nome" name="" value="">
+                <label for="nome">Nome:</label>
+            </div>
+            <div class="input-field">
+                <input type="email" id="email" placeholder="Digite seu Email" name="" value="">1'
+                <label for="email">Email:</label>
+            </div>
+            <div class="input-field">
+                <input type="password" id="senha" placeholder="Digite sua senha" name="" value="">
+                <label for="senha">Senha:</label>
+            </div>
+            <div class="input-field">
+                <input type="password" id="confirme sua senha" placeholder="Confirme sua senha" name="" value="">
+                <label for="confirme sua senha">Confirme sua senha:</label>
+            </div>
+            <div class="center">
+                <button>Enviar</button>
+            </div>
+        </form>
     </div>
-  </div>
 </template>
+
+<script>
+export default {
+  name: "Cadastro3",
+  components: {
+  },
+};
+</script>
 
 <style scoped>
 h2{
@@ -117,11 +116,3 @@ a:hover{
     color: black;
 }
 </style>
-
-<script>
-export default {
-  name: "Home",
-  components: {
-  },
-};
-</script>
