@@ -28,8 +28,6 @@ const routes = [
     name: 'ToDoList4',
     component: ToDoList4
   },
-
-
 ]
 
 const router = new VueRouter({
